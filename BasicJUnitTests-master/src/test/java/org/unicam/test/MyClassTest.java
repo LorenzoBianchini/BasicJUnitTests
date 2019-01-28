@@ -90,7 +90,7 @@ public class MyClassTest {
 	}
 
 	@ParameterizedTest
-	@ValueSource(strings = { "radar"})
+	@ValueSource(strings = { "radar", "pippo"})
 	void palindromes(String candidate) {
 		MyClass tester = new MyClass();
 		assertTrue(tester.isPalindrome(candidate));
